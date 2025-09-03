@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.App {
+  margin-top: 2rem;
+}
+
+.calculator {
+  background: #fff;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calculator input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 80%;
+}
+
+.calculator .buttons {
+  margin-top: 1rem;
+}
+
+.calculator button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background: #0097a7;
+}
+
+.calculator h3 {
+  margin-top: 1rem;
+}
