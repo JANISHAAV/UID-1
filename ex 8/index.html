@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Items</h1>
+
+        <form id="item-form">
+            <input type="hidden" id="item-id" />
+            <div class="row">
+                <label for="name">Name</label>
+                <input id="name" placeholder="Item name" required />
+            </div>
+            <div class="row">
+                <label for="description">Description</label>
+                <input id="description" placeholder="Optional description" />
+            </div>
+            <div class="actions">
+                <button type="submit" id="save-btn">Add</button>
+                <button type="button" id="cancel-btn" class="secondary" hidden>Cancel</button>
+            </div>
+        </form>
+
+        <table id="items-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="/script.js"></script>
+    <script>
+        // Load initial data
+        window.addEventListener('DOMContentLoaded', () => {
+            window.CrudUI.loadItems();
+        });
+    </script>
+</body>
+</html>
+
+
+
